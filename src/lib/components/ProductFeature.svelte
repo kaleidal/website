@@ -5,7 +5,7 @@
   }>();
 </script>
 
-<article class="product" class:reverse={kind === 'nook' || kind === 'limbo'}>
+<article class="product" class:reverse={kind === 'limbo' || kind === 'conlanger'}>
   <a class="visual {kind}" {href} aria-label={`Explore ${name}`}>
     {#if kind === 'limbo'}
       <img src="/products/limbo.webp" alt="Limbo’s desktop library and download manager" width="1200" height="771" loading="lazy" />

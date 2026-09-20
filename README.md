@@ -1,6 +1,6 @@
 # Kaleidal
 
-The Kaleidal studio website, featuring Raffi, Nook, Conlanger, and Limbo. Built with SvelteKit, Tailwind CSS, and Cloudflare Workers.
+The Kaleidal studio website, featuring Raffi, Limbo, Nook, and Conlanger. Built with SvelteKit, Tailwind CSS, and Cloudflare Workers.
 
 ## Development
 
