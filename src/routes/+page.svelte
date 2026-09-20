@@ -39,7 +39,7 @@
         <ProductFeature number="01" name="Raffi" title="For your next “one more episode.”" description="A streaming client that makes a night in feel like a good plan. Discover films and series, keep your favorites close, and watch together." href="https://raffi.al" label="Meet Raffi" kind="raffi" />
         <ProductFeature number="02" name="Limbo" title="Find it. Get it. Keep it." description="A home for your downloads. Browse, queue downloads and torrents, and keep your software and files together in one desktop app." href="https://limbo.kaleid.al" label="Discover Limbo" kind="limbo" />
         <ProductFeature number="03" name="Nook" title="A little space for your life." description="A private diary for ordinary days, big feelings, and everything in between. Your words, tucked away with end-to-end encryption." href="https://nook.you" label="Find your Nook" kind="nook" />
-        <ProductFeature number="04" name="Conlanger" title="A world in your own words." description="Start with a sound. End up with a language. A toolkit for building vocabulary, shaping grammar, and following your imagination somewhere new." href="https://github.com/kaleidal/conlanger" label="Explore Conlanger" kind="conlanger" />
+        <ProductFeature number="04" name="Conlanger" title="A world in your own words." description="Start with a sound. End up with a language. A toolkit for building vocabulary, shaping grammar, and following your imagination somewhere new." href="https://conlanger.site" label="Explore Conlanger" kind="conlanger" />
       </div>
     </section>
     <section id="about" class="about bg-ink text-paper">

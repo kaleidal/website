@@ -45,6 +45,6 @@ The Worker is named `kaleidal`. Add `kaleid.al` as its custom domain in Cloudfla
 - `static/kaleidal.png` is the original brand mark.
 - `static/products/raffi.webp` and `static/products/limbo.webp` are optimized screenshots from their respective repositories.
 
-Nook and Conlanger use illustrative artwork. Conlanger links to its GitHub repository.
+Nook and Conlanger use illustrative artwork. Conlanger links to conlanger.site.
 
 TypeScript 7 runs the type checks through `svelte-check --tsgo`; TypeScript 6 is also installed because Svelte's tooling requires its compiler API.
