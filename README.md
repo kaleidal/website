@@ -1,6 +1,6 @@
 # Kaleidal
 
-The Kaleidal studio website, featuring Raffi, Nook, and Conlanger. Built with SvelteKit, Tailwind CSS, and Cloudflare Workers.
+The Kaleidal studio website, featuring Raffi, Nook, Conlanger, and Limbo. Built with SvelteKit, Tailwind CSS, and Cloudflare Workers.
 
 ## Development
 
@@ -43,7 +43,7 @@ The Worker is named `kaleidal`. Add `kaleid.al` as its custom domain in Cloudfla
 - `src/lib/components/ProductFeature.svelte` contains the product feature layouts and illustrations.
 - `src/app.css` defines the shared typography, colors, and accessibility styles.
 - `static/kaleidal.png` is the original brand mark.
-- `static/products/raffi.webp` is an optimized screenshot from the Raffi repository.
+- `static/products/raffi.webp` and `static/products/limbo.webp` are optimized screenshots from their respective repositories.
 
 Nook and Conlanger use illustrative artwork. Conlanger links to its GitHub repository.
 

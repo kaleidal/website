@@ -4,7 +4,7 @@
 
 <svelte:head>
   <title>Kaleidal — Software with a little personality.</title>
-  <meta name="description" content="We’re Kaleidal, an independent software studio making room for what you love. Meet Raffi, Nook, and Conlanger." />
+  <meta name="description" content="We’re Kaleidal, an independent software studio making room for what you love. Meet Raffi, Nook, Conlanger, and Limbo." />
   <meta property="og:title" content="Kaleidal — Software with a little personality." />
   <meta property="og:description" content="Watch something. Write something. Invent a whole language. Meet the things we’re making." />
   <meta property="og:type" content="website" />
@@ -36,10 +36,11 @@
     </section>
     <section id="projects" class="projects bg-paper">
       <div class="shell">
-        <div class="section-heading"><h2 class="display">A few things<br />we’re putting into the world.</h2><span>(01—03)</span></div>
+        <div class="section-heading"><h2 class="display">A few things<br />we’re putting into the world.</h2><span>(01—04)</span></div>
         <ProductFeature number="01" name="Raffi" title="For your next “one more episode.”" description="A streaming client that makes a night in feel like a good plan. Discover films and series, keep your favorites close, and watch together." href="https://raffi.al" label="Meet Raffi" kind="raffi" />
         <ProductFeature number="02" name="Nook" title="A little space for your life." description="A private diary for ordinary days, big feelings, and everything in between. Your words, tucked away with end-to-end encryption." href="https://nook.you" label="Find your Nook" kind="nook" />
         <ProductFeature number="03" name="Conlanger" title="A world in your own words." description="Start with a sound. End up with a language. A toolkit for building vocabulary, shaping grammar, and following your imagination somewhere new." href="https://github.com/kaleidal/conlanger" label="Explore Conlanger" kind="conlanger" />
+        <ProductFeature number="04" name="Limbo" title="Find it. Get it. Keep it." description="A home for your downloads. Browse, queue downloads and torrents, and keep your software and files together in one desktop app." href="https://limbo.kaleid.al" label="Discover Limbo" kind="limbo" />
       </div>
     </section>
     <section id="about" class="about bg-ink text-paper">
@@ -65,7 +66,7 @@
   .personality { white-space: nowrap; }
   .brand-art { transform: rotate(-9deg); padding-left: 20px; }
   .brand-art img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
-  .hero-bottom { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-top: 80px; padding-top: 25px; border-top: 1px solid #19191750; }
+  .hero-bottom { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-top: 56px; padding-top: 25px; border-top: 1px solid #19191750; }
   .hero-bottom p { font-size: 17px; line-height: 1.65; }
   .explore-link { display: flex; align-items: center; gap: 36px; white-space: nowrap; padding-bottom: 4px; }
   .explore-link span { font-size: 27px; transition: transform .2s; }
@@ -92,7 +93,7 @@
   @media (min-width: 1600px) { .hero-content { padding-top: 100px; } }
   @media (max-width: 900px) {
     h1 { font-size: 8.7vw; }
-    .hero-bottom { margin-top: 55px; }
+    .hero-bottom { margin-top: 31px; }
     .hero-bottom p { max-width: 370px; font-size: 15px; }
     .desktop-break { display: none; }
   }
@@ -103,7 +104,7 @@
     .hero-main { display: flex; flex-direction: column; align-items: stretch; }
     h1 { font-size: 15vw; }
     .brand-art { width: 58%; align-self: end; padding: 0; margin-block: -6px -12px; }
-    .hero-bottom { margin-top: 30px; align-items: start; flex-direction: column; gap: 22px; }
+    .hero-bottom { margin-top: 6px; align-items: start; flex-direction: column; gap: 22px; }
     .hero-bottom p { font-size: 15px; }
     .explore-link { width: 100%; justify-content: space-between; }
     .projects { padding-block: 55px 24px; }

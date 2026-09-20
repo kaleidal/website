@@ -1,13 +1,16 @@
 <script lang="ts">
   let { number, name, title, description, href, label, kind } = $props<{
     number: string; name: string; title: string; description: string;
-    href: string; label: string; kind: 'raffi' | 'nook' | 'conlanger';
+    href: string; label: string; kind: 'raffi' | 'nook' | 'conlanger' | 'limbo';
   }>();
 </script>
 
-<article class="product" class:reverse={kind === 'nook'}>
+<article class="product" class:reverse={kind === 'nook' || kind === 'limbo'}>
   <a class="visual {kind}" {href} aria-label={`Explore ${name}`}>
-    {#if kind === 'raffi'}
+    {#if kind === 'limbo'}
+      <img src="/products/limbo.webp" alt="Limbo’s desktop library and download manager" width="1200" height="771" loading="lazy" />
+      <span class="visual-name">limbo<span class="dot">.</span></span>
+    {:else if kind === 'raffi'}
       <img src="/products/raffi.webp" alt="Raffi’s film discovery interface" width="1200" height="640" loading="lazy" />
       <span class="visual-name">raffi<span class="dot">.</span></span>
     {:else if kind === 'nook'}
@@ -41,6 +44,11 @@
   .reverse { grid-template-columns: 1fr 1.5fr; }
   .reverse .visual { order: 2; }
   .visual { position: relative; aspect-ratio: 1.3; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .limbo { background: #bdce89; }
+  .limbo .visual-name { color: var(--color-ink); }
+  .limbo .dot { color: #536d22; }
+  .limbo img { width: 112%; max-width: none; height: auto; transform: translate(9%, 21%) rotate(5deg); border-radius: 8px; box-shadow: 0 25px 60px #29341540; transition: transform .5s ease; }
+  .limbo:hover img { transform: translate(7%, 18%) rotate(2deg); }
   .raffi { background: #24252a; }
   .raffi img { width: 125%; max-width: none; height: 77%; object-fit: cover; object-position: top left; transform: translate(11%, 15%) rotate(-7deg); border: 1px solid #ffffff30; border-radius: 10px; box-shadow: 0 25px 70px #0009; transition: transform .5s ease; }
   .raffi:hover img { transform: translate(9%, 12%) rotate(-4deg); }

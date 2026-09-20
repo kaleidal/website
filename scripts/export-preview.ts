@@ -24,7 +24,7 @@ for (const match of html.matchAll(/<link href="([^"]+)" rel="stylesheet">/g)) {
   }
   html = html.replace(match[0], `<style>${css}</style>`);
 }
-for (const path of ['/kaleidal.png', '/products/raffi.webp']) {
+for (const path of ['/kaleidal.png', '/products/raffi.webp', '/products/limbo.webp']) {
   html = html.replaceAll(`"${path}"`, `"${await dataUrl(resolve(root, path.slice(1)))}"`);
 }
 await mkdir('preview', { recursive: true });
