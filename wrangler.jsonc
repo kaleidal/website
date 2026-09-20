@@ -5,6 +5,7 @@
   "main": ".svelte-kit/cloudflare/_worker.js",
   "compatibility_date": "2026-09-20",
   "compatibility_flags": ["nodejs_compat"],
+  "routes": [{ "pattern": "kaleid.al", "custom_domain": true }],
   "assets": { "binding": "ASSETS", "directory": ".svelte-kit/cloudflare" },
   "observability": { "enabled": true, "head_sampling_rate": 1 }
 }

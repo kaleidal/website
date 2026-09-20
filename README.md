@@ -27,15 +27,21 @@ bun run preview:standalone
 
 Open `preview/index.html`. Its images, styles, and fonts are embedded; the generated file is excluded from Git.
 
-## Deploy
+## Deployment
 
-Authenticate Wrangler with the intended Cloudflare account, then run:
+The production site is https://kaleid.al. The `kaleidal` Worker belongs to the Kaleidal Cloudflare account and is connected to [kaleidal/website](https://github.com/kaleidal/website).
 
-```sh
-bun run deploy
-```
+Cloudflare Workers Builds deploys each push to `main` with these settings:
 
-The Worker is named `kaleidal`. Add `kaleid.al` as its custom domain in Cloudflare. Canonical and social metadata use that domain.
+- Root directory: `/`
+- Build command: `bun run check && bun run build`
+- Deploy command: `bunx wrangler deploy`
+- Preview deploy command: `bunx wrangler versions upload`
+- Build variable: `BUN_VERSION=1.3.13`
+
+Other branches produce preview versions without replacing production. Cloudflare manages the GitHub connection and build credentials; no GitHub Actions secrets are needed.
+
+For a manual deployment, authenticate Wrangler and run `bun run deploy`. The account and `kaleid.al` custom domain are declared in `wrangler.jsonc`.
 
 ## Content
 
