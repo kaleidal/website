@@ -15,7 +15,7 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 <div id="top" class="hero bg-red">
-  <header class="shell py-7 md:py-9">
+  <header class="shell">
     <nav aria-label="Main navigation" class="flex items-center gap-6 text-sm md:gap-10 md:text-base">
       <a href="#projects">Our projects</a>
       <a href="#about">About us</a>
@@ -56,14 +56,16 @@
 </div>
 
 <style>
+  .hero { --header-height: 76px; }
+  header { display: flex; align-items: center; min-height: var(--header-height); }
   nav a { transition: opacity 160ms; }
   nav a:hover { opacity: .65; }
-  .hero-content { padding-top: clamp(50px, 8vw, 128px); padding-bottom: 38px; }
-  .hero-main { display: grid; grid-template-columns: 1.3fr 1fr; align-items: center; }
+  .hero-content { display: flex; flex-direction: column; min-height: calc(100svh - var(--header-height)); padding-top: clamp(40px, 6svh, 100px); padding-bottom: 38px; }
+  .hero-main { flex: 1; display: grid; grid-template-columns: 1.3fr 1fr; align-items: center; }
   h1 { position: relative; z-index: 1; font-size: clamp(72px, 8.1vw, 125px); font-weight: 650; }
   .personality { white-space: nowrap; }
   .brand-art { transform: rotate(-9deg); padding-left: 20px; }
-  .brand-art img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+  .brand-art img { display: block; width: 100%; height: auto; max-height: 40svh; object-fit: contain; mix-blend-mode: multiply; }
   .hero-bottom { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-top: 56px; padding-top: 25px; border-top: 1px solid #19191750; }
   .hero-bottom p { font-size: 17px; line-height: 1.65; }
   .explore-link { display: flex; align-items: center; gap: 36px; white-space: nowrap; padding-bottom: 4px; }
@@ -84,7 +86,7 @@
     .hero-main { animation: arrive .8s ease both; }
     @keyframes arrive { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
   }
-  @media (min-width: 1600px) { .hero-content { padding-top: 100px; } }
+  @media (min-width: 768px) { .hero { --header-height: 96px; } }
   @media (max-width: 900px) {
     h1 { font-size: 8.7vw; }
     .hero-bottom { margin-top: 31px; }
