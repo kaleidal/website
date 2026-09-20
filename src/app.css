@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-red: #ff4444;
+  --color-ink: #191917;
+  --color-paper: #f4f2eb;
+  --font-sans: 'DM Sans Variable', sans-serif;
+  --font-display: 'Bricolage Grotesque Variable', sans-serif;
+}
+
+:root { font-family: var(--font-sans); color: var(--color-ink); background: var(--color-paper); font-synthesis: none; }
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 7px; }
+::selection { background: var(--color-ink); color: var(--color-red); }
+h1, h2, h3, p { margin: 0; }
+.display { font-family: var(--font-display); font-weight: 600; letter-spacing: -.065em; line-height: .96; }
+.shell { width: min(1440px, 100%); margin-inline: auto; padding-inline: clamp(24px, 5vw, 88px); }
+.arrow { display: inline-block; transition: transform 200ms ease; }
+a:hover .arrow { transform: translate(3px, -3px); }
+.skip-link { position: fixed; top: 16px; left: 16px; z-index: 10; padding: 12px 20px; background: var(--color-paper); transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

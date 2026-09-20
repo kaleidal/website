@@ -1,0 +1,9 @@
+node_modules/
+.svelte-kit/
+.wrangler/
+.playwright-cli/
+.env
+.env.*
+.dev.vars
+.DS_Store
+preview/

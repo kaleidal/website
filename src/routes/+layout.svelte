@@ -1,0 +1,8 @@
+<script lang="ts">
+  import '@fontsource-variable/bricolage-grotesque/index.css';
+  import '@fontsource-variable/dm-sans/index.css';
+  import '../app.css';
+  let { children } = $props();
+</script>
+
+{@render children()}
